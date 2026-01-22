@@ -62,13 +62,6 @@ cloud-drive/ │ ├── index.html ├── register.html ├── dashboar
 
 ---
 
-## ⚠️ Limitations
-- No real cloud storage (files are not uploaded to a server)  
-- Google/Facebook real authentication is not included  
-- Data is stored only in the browser  
-
----
-
 ## 🔮 Future Enhancements
 - Backend integration (Node.js / Django / Firebase)  
 - Real cloud file storage  
