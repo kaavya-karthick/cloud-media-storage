@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cloud Drive</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="layout">
+
+  <!-- Sidebar -->
+  <aside>
+    <h3>Cloud Drive</h3>
+    <button onclick="newFolder()">+ New Folder</button>
+    <ul>
+      <li onclick="setView('drive')">My Drive</li>
+      <li onclick="setView('starred')">Starred</li>
+      <li onclick="setView('recent')">Recent</li>
+      <li onclick="setView('trash')">Trash</li>
+    </ul>
+
+    <label class="dark-toggle">
+      <input type="checkbox" onchange="toggleDark()"> Dark Mode
+    </label>
+  </aside>
+
+  <!-- Main -->
+  <main>
+    <header>
+      <span id="breadcrumb"></span>
+      <input type="file" multiple onchange="uploadFiles(this.files)">
+      <button onclick="logout()">Logout</button>
+    </header>
+
+    <div id="grid" class="grid"></div>
+  </main>
+
+</div>
+
+<!-- Preview -->
+<div id="preview" class="preview" onclick="closePreview()">
+  <div id="previewContent"></div>
+</div>
+
+<script src="js/drive.js"></script>
+<script src="js/shortcuts.js"></script>
+</body>
+</html>
