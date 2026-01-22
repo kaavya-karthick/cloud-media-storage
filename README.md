@@ -39,7 +39,7 @@ All data is stored and managed using the browser’s **localStorage**.
 
 ## 📂 Project Structure
 cloud-drive/ │ ├── index.html ├── register.html ├── dashboard.html │ ├── css/ │   └── style.css │ ├── js/ │   ├── auth.js │   ├── drive.js │   └── shortcuts.js │ └── assets/ ├── folder.png ├── image.png ├── pdf.png ├── video.png ├── doc.png
-Copy code
+
 
 ---
 
